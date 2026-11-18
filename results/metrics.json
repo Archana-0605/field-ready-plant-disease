@@ -1,0 +1,83 @@
+{
+  "m1_baseline": {
+    "plantvillage_test": {
+      "n": 5431,
+      "accuracy": 0.9923,
+      "accuracy_95ci": [
+        0.9896,
+        0.9943
+      ],
+      "top3_accuracy": 0.9994,
+      "macro_f1": 0.9899
+    },
+    "plantdoc_test": {
+      "n": 236,
+      "accuracy": 0.2415,
+      "accuracy_95ci": [
+        0.1913,
+        0.3
+      ],
+      "top3_accuracy": 0.5297,
+      "macro_f1": 0.2343
+    }
+  },
+  "m2_robust_aug": {
+    "plantvillage_test": {
+      "n": 5431,
+      "accuracy": 0.9845,
+      "accuracy_95ci": [
+        0.9809,
+        0.9875
+      ],
+      "top3_accuracy": 0.9991,
+      "macro_f1": 0.9792
+    },
+    "plantdoc_test": {
+      "n": 236,
+      "accuracy": 0.3729,
+      "accuracy_95ci": [
+        0.3137,
+        0.4362
+      ],
+      "top3_accuracy": 0.6356,
+      "macro_f1": 0.3622
+    }
+  },
+  "m3_field_finetune": {
+    "plantvillage_test": {
+      "n": 5431,
+      "accuracy": 0.9786,
+      "accuracy_95ci": [
+        0.9744,
+        0.9822
+      ],
+      "top3_accuracy": 0.9983,
+      "macro_f1": 0.972
+    },
+    "plantdoc_test": {
+      "n": 236,
+      "accuracy": 0.6059,
+      "accuracy_95ci": [
+        0.5424,
+        0.6661
+      ],
+      "top3_accuracy": 0.8559,
+      "macro_f1": 0.603
+    }
+  },
+  "tflite_int8_weights": {
+    "size_mb": 6.65,
+    "keras_size_mb": 24.82,
+    "plantdoc_test": {
+      "n": 236,
+      "accuracy": 0.6059,
+      "accuracy_95ci": [
+        0.5424,
+        0.6661
+      ],
+      "top3_accuracy": 0.8347,
+      "macro_f1": 0.6052
+    },
+    "mean_latency_ms_kaggle_cpu": 34.4
+  }
+}
